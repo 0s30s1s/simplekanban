@@ -1,4 +1,6 @@
 Simplekanban::Application.routes.draw do
+  resources :stories
+
   resources :statuses
 
   # The priority is based upon order of creation:
