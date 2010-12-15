@@ -2,6 +2,10 @@ Simplekanban::Application.routes.draw do
   resources :stories
 
   resources :statuses
+  
+  resources :projects, :only => [:show], :requirement => {:id => 'default'}
+  
+  root :to => 'projects#show', :id => 'default'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
