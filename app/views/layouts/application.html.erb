@@ -4,8 +4,12 @@
   <title>Simple Kanban</title>
 </head>
 <body>
-
-<%= yield %>
-
+	<div class='container'>
+		<%= render 'layouts/header' %>
+		<section>
+			<%= yield %>
+		</section>
+		<%= render 'layouts/footer' %>
+	</div>
 </body>
 </html>
